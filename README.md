@@ -62,7 +62,7 @@ To help you, this project has a `npm run fix` command to fix all eslint errors.
 
 ## Credits
 
-Thanks [marcelokohl](@marcelokohl] for the ideia to name of project 😄
+Thanks [marcelokohl](https://github.com/marcelokohl) for the ideia to name of project 😄
 
 ## License
 
