@@ -12,7 +12,7 @@
 
 ## Add new words
 
-It is simple, you need to access the `src/library.json`, add the new word and submit a pull request. 
+It is simple, you need to access the [`src/library.json`](https://github.com/LFeh/despolitizador/edit/master/src/library.json), add the new word and submit a pull request. 
 
 Example:
 
