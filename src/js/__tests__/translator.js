@@ -26,3 +26,17 @@ describe('translate', () => {
     expect(translate(library, inputText)).toBe('tomou de assalto');
   });
 });
+
+/*
+ * it fails on similar words like
+ * empregado and empregador
+ * regex catches the smaller one
+ */
+
+describe('check translate method integrity', () => {
+  Object.entries(library).forEach(([word, translation]) =>
+    test(`check word: ${word}`, () => {
+      expect(translate(library, word)).toBe(translation);
+    })
+  );
+});
