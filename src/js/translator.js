@@ -9,8 +9,8 @@ const generateRandomKey = (data = []) => Math.floor(Math.random() * (data.length
 export const translate = (library, inputText) => {
   let translatedText = inputText;
   filter(library, (politicalLanguage, peopleLanguage) => {
-    const peopleLanguageRegex = new RegExp(peopleLanguage, 'gm');
-    const peopleLanguageWithoutAccentRegex = new RegExp(removeAccent(peopleLanguage), 'gm');
+    const peopleLanguageRegex = new RegExp(`\\b${peopleLanguage}\\b`, 'gm');
+    const peopleLanguageWithoutAccentRegex = new RegExp(`\\b${removeAccent(peopleLanguage)}\\b`, 'gm');
 
     translatedText = translatedText
       .replace(peopleLanguageRegex, politicalLanguage)
