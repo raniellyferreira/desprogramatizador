@@ -17,7 +17,7 @@ It is simple, you need to access the [`src/library.json`](https://github.com/gan
 Example:
 
 ```json
-  "vossa excelência": "mano"
+  "setar variável": "Atribuir qualquer valor à variável"
 ```
 
 It need that all words in our library.json using the correct grammar.
