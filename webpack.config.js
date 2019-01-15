@@ -20,7 +20,7 @@ const webapp = {
   theme_color: config.theme_color,
   icons: [
     {
-      src: path.resolve('./src/medias/political-avatar.png'),
+      src: path.resolve('./src/medias/avatar.png'),
       sizes: [96, 128, 192, 256, 384, 512]
     }
   ]

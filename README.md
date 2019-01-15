@@ -1,4 +1,4 @@
-<p align="center"><img src="/src/medias/political-avatar.svg" alt="Political Avatar" width="200"></p>
+<p align="center"><img src="/src/medias/avatar.svg" alt="Avatar" width="200"></p>
 
 # Desprogramatizador
 

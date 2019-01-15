@@ -1,10 +1,10 @@
 {
-	"title": "Despolitizador",
-	"description": "Traduzindo linguajar político para vocabulário das ruas",
+	"title": "Desprogramatizador",
+	"description": "Traduzindo o que o pessoal de TI que dizer",
 	"url": "https://www.felipefialho.com/despolitizador/",
-	"logo": "medias/political-avatar.svg",
-	"logo_fallback": "medias/political-avatar.png",
+	"logo": "medias/avatar.svg",
+	"logo_fallback": "medias/avatar.png",
 	"theme_color": "#0291a7",
-	"short_name": "Despolitizador",
+	"short_name": "Desprogramatizador",
 	"ga": "UA-40410936-4"
 }
