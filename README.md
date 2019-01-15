@@ -62,7 +62,7 @@ To help you, this project has a `npm run fix` command to fix all eslint errors.
 
 ## Credits
 
-- Felipe Fialho
+- Felipe Fialho - Base from 'Despolitizador'
 
 ## License
 
