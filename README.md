@@ -6,13 +6,13 @@
 [![license](https://img.shields.io/github/license/LFeh/despolitizador.svg)](./license.md)
 [![GitHub contributors](https://img.shields.io/github/contributors/LFeh/despolitizador.svg)](https://github.com/LFeh/despolitizador/graphs/contributors)
 
-> To translate political language for people's language
+> To translate developer's language for people's language
 
-[View project](https://www.felipefialho.com/despolitizador/)
+<!-- [View project](https://www.felipefialho.com/despolitizador/) -->
 
 ## Add new words
 
-It is simple, you need to access the [`src/library.json`](https://github.com/LFeh/despolitizador/edit/master/src/library.json), add the new word and submit a pull request. 
+It is simple, you need to access the [`src/library.json`](https://github.com/ganobrega/desprogramatizador/edit/master/src/library.json), add the new word and submit a pull request. 
 
 Example:
 
@@ -29,8 +29,8 @@ This project uses Pug, Stylus and Webpack.
 
 ```sh
 # Clone this repository
-$ git clone git@github.com:LFeh/despolitizador.git
-$ cd despolitizador
+$ git clone git@github.com:ganobrega/desprogramatizador.git
+$ cd desprogramatizador
 
 # install dependencies
 $ npm i
@@ -62,8 +62,8 @@ To help you, this project has a `npm run fix` command to fix all eslint errors.
 
 ## Credits
 
-Thanks [marcelokohl](https://github.com/marcelokohl) for the ideia to name of project 😄
+- Felipe Fialho
 
 ## License
 
-MIT License © Felipe Fialho
+MIT License
