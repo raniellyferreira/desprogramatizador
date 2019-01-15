@@ -1,6 +1,6 @@
 <p align="center"><img src="/src/medias/political-avatar.svg" alt="Political Avatar" width="200"></p>
 
-# Despolitizador
+# Desprogramatizador
 
 ![Travis](https://img.shields.io/travis/LFeh/despolitizador.svg)
 [![license](https://img.shields.io/github/license/LFeh/despolitizador.svg)](./license.md)
