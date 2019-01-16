@@ -1,10 +1,10 @@
 {
 	"title": "Desprogramatizador",
 	"description": "Traduzindo o que o pessoal de TI que dizer",
-	"url": "https://www.felipefialho.com/despolitizador/",
+	"url": "https://ganobrega.github.io/desprogramatizador/",
 	"logo": "medias/avatar.svg",
 	"logo_fallback": "medias/avatar.png",
 	"theme_color": "#0291a7",
 	"short_name": "Desprogramatizador",
-	"ga": "UA-40410936-4"
+	"ga": "UA-132570671-1"
 }

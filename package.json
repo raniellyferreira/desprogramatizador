@@ -3,7 +3,7 @@
   "version": "1.3.0",
   "title": "Desprogramatizador",
   "description": "To translate what the TI people want to say",
-  "homepage": "http://www.gabrielnobrega.com.br/despolitizador",
+  "homepage": "https://ganobrega.github.io/desprogramatizador/",
   "browserslist": [
     "> 1%",
     "last 2 versions"
@@ -11,7 +11,7 @@
   "author": {
     "name": "Gabriel Nobrega",
     "email": "",
-    "url": "http://www.gabrielnobrega.com.br"
+    "url": "https://github.io/ganobrega"
   },
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server",
