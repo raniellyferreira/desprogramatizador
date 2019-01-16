@@ -8,7 +8,7 @@
 
 > To translate developer's language for people's language
 
-<!-- [View project](https://www.felipefialho.com/despolitizador/) -->
+[View project](https://ganobrega.github.io/desprogramatizador/)
 
 ## Add new words
 
@@ -17,10 +17,10 @@ It is simple, you need to access the [`src/library.json`](https://github.com/gan
 Example:
 
 ```json
-  "setar variável": "Atribuir qualquer valor à variável"
+  "bug": "problema"
 ```
 
-It need that all words in our library.json using the correct grammar.
+It need that all words in our library.json using the correct grammar and lowercase.
 
 ## Getting Started
 
