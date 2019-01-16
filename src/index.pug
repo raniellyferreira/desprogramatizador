@@ -27,7 +27,7 @@ html(lang='pt-br')
     meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=5') 
     meta(name='theme-color' content=data.theme_color)
     link(rel='shortcut icon' type='image/favicon' href='favicon.ico')   
-    //- script(src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js")
+    script(src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js")
     script(async src='https://www.googletagmanager.com/gtag/js?id=' + data.ga)
     script.
       window.dataLayer = window.dataLayer || [];
@@ -43,7 +43,9 @@ html(lang='pt-br')
     main.main(role='main')    
       .container
         section.header
-          h1.title.text-center #{data.title}
+          a.title.text-center(href=`${data.git_url}`) 
+            //- ion-icon(name="git-hub")
+            | #{data.title}
           h2.description.text-center #{data.description}
         img.avatar(src=data.logo alt='Avatar simulando um desenvolvedor')
         section.translator
@@ -58,14 +60,13 @@ html(lang='pt-br')
             button.translator__button(data-translator='reload', aria-hidden='true') Sortear palavra 🎲
         section.content
             //- p.text Funciona com frases ou palavras 😄
-            //- p.text 
+            p.text 
               | Quer traduzir novas palavras? 
-              a(href='https://github.com/ganobrega/desprogramatizador/edit/master/src/library.json' target='_blank' rel='noopener noreferrer') Adiciona aí
+              a(href=`${data.git_url}/edit/master/src/library.json` target='_blank' rel='noopener noreferrer') Adiciona aí
               | ... 
     footer.footer(role='dialog') 
       p.footer__description 
-        //- | Feito por 
-        //- a.footer__link(href='https://twitter.com/LFeh' target='_blank' rel='noopener noreferrer') Felipe Fialho
-        //- span &nbsp; & Adaptado por: 
-        ion-icon(name="heart")
-        //- a.footer__link(href='https://github.com/ganobrega' target='_blank' rel='noopener noreferrer') Gabriel Nobrega
+        strong Desenvolvido por:&nbsp;
+        a.footer__link(href='https://github.com/LFeh' target='_blank' rel='noopener noreferrer') Felipe Fialho
+        span &nbsp;& 
+        a.footer__link(href='https://github.com/ganobrega' target='_blank' rel='noopener noreferrer') Gabriel Nobrega

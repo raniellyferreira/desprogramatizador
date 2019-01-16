@@ -10,11 +10,20 @@
   font-size 1.6rem
   height $footer-height
   justify-content center
+  // min-height 10vh
+
+  strong
+    display none
+
+    +above('sm')
+      display inline-block
 
   &__link 
     color $blue-light
     font-weight bold
     text-decoration none
+
+
 
     &:focus
     &:hover
