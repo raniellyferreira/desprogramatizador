@@ -12,10 +12,12 @@ export const translate = (library, inputText) => {
   filter(library, (politicalLanguage, peopleLanguage) => {
     const peopleLanguageRegex = new RegExp(`\\b${peopleLanguage}\\b`, 'gm');
     const peopleLanguageWithoutAccentRegex = new RegExp(`\\b${removeAccent(peopleLanguage)}\\b`, 'gm');
-
+    
     translatedText = translatedText
       .replace(peopleLanguageRegex, politicalLanguage)
       .replace(peopleLanguageWithoutAccentRegex, politicalLanguage);
+    
+
   });
   updateURL('text', encodeURI(inputText));
   return translatedText;
@@ -25,7 +27,6 @@ export const translator = (e) => {
   const $translator = document.querySelector('[data-translator="input"]');
   const $result = document.querySelector('[data-translator="result"]');
   const $reload = document.querySelector('[data-translator="reload"]');
-  const $share = document.querySelector('[data-translator="share"]');
 
   const textTranslate = (e) => {
     let text;

@@ -15,12 +15,12 @@
   "de produção": "para a internet",
   "em produção": "para a internet",
   "homologação": "teste entre equipes",
-  "end-point": "usuário final",
+  "endpoint": "aplicação final",
   "incognito": "anônimo",
   "deploy": "publicar",
   "o build": "a compilação",
   "build": "compilação",
-  "api": "ponte para integração entre sistemas",
+  "api": "ponte de integração entre sistemas",
   "um request": "uma solicitação",
   "requisição": "solicitação",
   "request": "solicitação",
@@ -52,8 +52,13 @@
   "codar": "programar",
   "depurar código": "depurar no código",
   "depurar": "encontrar problemas",
-  "o  setup": "a configuração",
+  "o setup": "a configuração",
   "setup": "configuração",
-  "rodando": "executando"
-  
+  "rodando em background": "sendo executada em background",
+  "rodando": "executando",
+  "background": "segundo plano",
+  "um app": "uma app",
+  "app": "aplicação"
+
+
 }
