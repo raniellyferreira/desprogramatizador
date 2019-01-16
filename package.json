@@ -34,7 +34,6 @@
     "noprompt": true
   },
   "dependencies": {
-    "ionicons": "^4.5.1",
     "lodash": "^4.17.4",
     "webpack": "^3.5.5"
   },
