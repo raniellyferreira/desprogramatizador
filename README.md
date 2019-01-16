@@ -2,9 +2,9 @@
 
 # Desprogramatizador
 
-![Travis](https://img.shields.io/travis/LFeh/despolitizador.svg)
-[![license](https://img.shields.io/github/license/LFeh/despolitizador.svg)](./license.md)
-[![GitHub contributors](https://img.shields.io/github/contributors/LFeh/despolitizador.svg)](https://github.com/LFeh/despolitizador/graphs/contributors)
+![Travis](https://img.shields.io/travis/ganobrega/desprogramatizador.svg)
+[![license](https://img.shields.io/github/license/ganobrega/desprogramatizador.svg)](./license.md)
+[![GitHub contributors](https://img.shields.io/github/contributors/ganobrega/desprogramatizador.svg)](https://github.com/ganobrega/desprogramatizador/graphs/contributors)
 
 > To translate developer's language for people's language
 
@@ -48,7 +48,7 @@ For grid system uses [Autoprefixer](https://github.com/postcss/autoprefixer) to 
 
 ### Code Standards
 
-This project uses my own [Coding Style](https://github.com/LFeh/coding-style) as code reference.
+This project uses the [Coding Style](https://github.com/LFeh/coding-style) of ``LFeh`` as code reference.
 
 To help you, this project has a `npm run fix` command to fix all eslint errors.
 
@@ -63,6 +63,7 @@ To help you, this project has a `npm run fix` command to fix all eslint errors.
 ## Credits
 
 - Felipe Fialho - Base from 'Despolitizador'
+- Gabriel Nobrega - Features for developers translation
 
 ## License
 
