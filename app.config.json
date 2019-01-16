@@ -1,10 +1,10 @@
 {
 	"title": "Desprogramatizador",
-	"description": "Traduzindo o que o pessoal de TI que dizer",
+	"description": "Traduza a língua do pessoal de TI",
 	"url": "https://ganobrega.github.io/desprogramatizador/",
 	"logo": "medias/avatar.svg",
 	"logo_fallback": "medias/avatar.png",
-	"theme_color": "#0291a7",
+	"theme_color": "#71A534",
 	"short_name": "Desprogramatizador",
 	"ga": "UA-132570671-1"
 }

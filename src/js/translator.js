@@ -3,6 +3,7 @@ import json from '../library.json';
 import { debounce } from './debounce.js';
 import { capitalizeFirstLetter } from './capitalize';
 import { removeAccent } from './convert';
+import { getQueryParam, updateURL } from './queryParameters.js';
 
 const generateRandomKey = (data = []) => Math.floor(Math.random() * (data.length - 0) + 0);
 
@@ -16,6 +17,7 @@ export const translate = (library, inputText) => {
       .replace(peopleLanguageRegex, politicalLanguage)
       .replace(peopleLanguageWithoutAccentRegex, politicalLanguage);
   });
+  updateURL('text', encodeURI(inputText));
   return translatedText;
 };
 
@@ -23,6 +25,7 @@ export const translator = (e) => {
   const $translator = document.querySelector('[data-translator="input"]');
   const $result = document.querySelector('[data-translator="result"]');
   const $reload = document.querySelector('[data-translator="reload"]');
+  const $share = document.querySelector('[data-translator="share"]');
 
   const textTranslate = (e) => {
     let text;
@@ -35,6 +38,7 @@ export const translator = (e) => {
     text = translate(json, text);
     $result.value = capitalizeFirstLetter(text) || 'Tradução';
     $translator.value = capitalizeFirstLetter($translator.value);
+    
   };
 
   const getRandomText = () => {
@@ -46,5 +50,13 @@ export const translator = (e) => {
 
   $translator.addEventListener('keyup', (e) => debounce(textTranslate(), 600));
   $reload.addEventListener('click', () => getRandomText());
-  window.addEventListener('load', () => getRandomText());
+  window.addEventListener('load', () => {
+    if(getQueryParam('text') !== ''){
+      $translator.value = capitalizeFirstLetter(decodeURI(getQueryParam('text')));
+      debounce(textTranslate(), 600);
+    }else{
+      getRandomText();
+    }
+  
+  });
 };

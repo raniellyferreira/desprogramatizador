@@ -4,21 +4,33 @@
   
 .translator
   &__main
+    display flex
+    border-radius 4px
+    overflow hidden
+
     +above('sm')
-      align-items stretch
-      lost-flex-container row 
+      // box-shadow 0 1px 5px 1px rgba($gray-darker, .8)
+      box-shadow 0 5px 22px 0 rgba(0,0,0,0.2)
+      //   align-items stretch
+      //   lost-flex-container row 
 
   &__content
-    +above('sm')
-      lost-column 6/12 0 0 
+    // +above('sm')
+    display flex
+    flex-grow 1
+    flex-shrink 1
+    flex-basis 0%
+
 
   &__label
     position absolute
     top -999em
 
   &__text 
+    background $gray-dark
+    color $white
     border 0
-    box-shadow 0 1px 3px 1px rgba($gray, .2)
+    box-shadow 0 1px 3px 1px rgba($gray-darker, .6)
     display block
     font-size 2.4rem
     min-height 30vw
@@ -31,21 +43,30 @@
       overflow-y auto
 
     &[disabled]
-      background $gray-white 
+      background $gray-dark 
 
     &:not(:last-child)
       border-right $gray-lighter solid 1px
 
+  &__actions
+    display: flex
+    flex-direction row
+    justify-content center
+    align-items center
+
+
   &__button
-    background $blue 
+    background $blue
     border 0
     color $white
+    border-radius 4px
     cursor pointer
-    display block
+    display inline-flex
     font-size 1.6rem
     font-weight bold
-    margin-left auto
-    margin-right auto
     margin-top $space-sm
-    padding $space-sm
-    transition background .3s
+    padding $space-xs $space-sm
+    // border 1px solid $blue
+    // transition background .3s
+    // margin-left $space-sm
+    // margin-right 0
