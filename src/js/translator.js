@@ -52,11 +52,13 @@ export const translator = (e) => {
   $translator.addEventListener('keyup', (e) => debounce(textTranslate(), 600));
   $reload.addEventListener('click', () => getRandomText());
   window.addEventListener('load', () => {
-    if(getQueryParam('text') !== ''){
+
+
+    if(getQueryParam('text') == '' || getQueryParam('text') == undefined){
+      getRandomText();
+    }else{
       $translator.value = capitalizeFirstLetter(decodeURI(getQueryParam('text')));
       debounce(textTranslate(), 600);
-    }else{
-      getRandomText();
     }
   
   });

@@ -27,4 +27,4 @@ export const updateURL = (param, value) => {
   if (window.history.pushState) {
     window.history.pushState({ path: newUrl }, '', newUrl);
   }
-}
+};
