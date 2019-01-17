@@ -32,13 +32,14 @@ export const translator = (e) => {
     let text;
     text = $translator.value.toLowerCase();
     if(text === ''){
-      $translator.placeholder = 'Digitar texto...';
       $result.value = 'Tradução';
+      updateURL('text', encodeURI(''));
       return;
+    }else{
+      text = translate(json, text);
+      $result.value = capitalizeFirstLetter(text) || 'Tradução';
+      $translator.value = capitalizeFirstLetter($translator.value);
     }
-    text = translate(json, text);
-    $result.value = capitalizeFirstLetter(text) || 'Tradução';
-    $translator.value = capitalizeFirstLetter($translator.value);
     
   };
 

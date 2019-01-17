@@ -4,7 +4,7 @@ export const getQueryParam = param => {
 };
 
 export const updateURL = (param, value) => {
-  let search = window.location.search.replace('?', '').split('&');
+  let search = (window.location.search === '') ? [] : window.location.search.replace('?', '').split('&');
   
   let params = search.map((item) => {
     let keys = item.split('=');
