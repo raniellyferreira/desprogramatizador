@@ -10,9 +10,11 @@
 
 [View project](https://ganobrega.github.io/desprogramatizador/)
 
+[View political translator](https://github.com/LFeh/despolitizador)
+
 ## Add new words
 
-It is simple, you need to access the [`src/library.json`](https://github.com/ganobrega/desprogramatizador/edit/master/src/library.json), add the new word and submit a pull request. 
+It is simple, you need to access the [`src/library.json`](https://github.com/ganobrega/desprogramatizador/edit/master/src/library.json), add the new word and submit a pull request.
 
 Example:
 
@@ -62,9 +64,9 @@ To help you, this project has a `npm run fix` command to fix all eslint errors.
 
 ## Credits
 
-- Felipe Fialho - Base from 'Despolitizador'
+- Felipe Fialho - Base project from [Despolitizador](https://github.com/LFeh/despolitizador)
 - Gabriel Nobrega - Features for developers translation
 
 ## License
 
-MIT License
+MIT License © Felipe Fialho
